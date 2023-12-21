@@ -432,14 +432,17 @@ h2 span {
 
 /* FOOTER */
 
-footer .container4 {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+#footer {
+    width: 100%;
+}
+
+footer .separador-footer img {
+    transform: translateY(8px);    
+    width: 100%;
+    height: auto;
 }
 
 footer .container4{
-    padding: 60px;
     font-size: 20px;
     color: #fff;
 }
@@ -449,17 +452,18 @@ footer .container4 img {
     height: fit-content;
 }
 
+footer .container4 {
+width: 100%;
+background-color: var(--color-corporativo);
+}
+
 footer .container4 h4 {
    font-size: 32px;
 }
 
-footer .separador-footer {
-    transform: translateY(8px);    
-    width: 100%;
-    height: auto;
-}
-
-footer .container4 {
-width: 100%;
-background-color: var(--color-corporativo);
+.container4 .container4-text {
+    padding: 60px;
+    gap: 20px;
+    display: flex;
+    align-items: center
 }
