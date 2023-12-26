@@ -76,7 +76,7 @@ body {
   
 header {
     background-color: #000;
-    padding: 3%;
+    padding: 1.8%;
     position: fixed;
     width: 100%;
     top: 0;
@@ -88,6 +88,35 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  nav ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+  
+  nav ul li a:hover:after {
+    width: 100%;
+  }
   
 .logo img {
     max-width: 10vh;
@@ -131,8 +160,19 @@ h2 span {
 }
 
 .container1 {
+    width: 100%;
+}
+
+#fondo {
+    transition: all .3s ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container1-text {
     width: 50%;
     padding: 60px;
+    background-color: #000;
 }
 
 .container1 p {
@@ -211,9 +251,20 @@ h2 span {
 
 /* SEPARADOR 1 */
 .separador1 img{
-    transform: translateY(8px);    
+    transform: translateY(-45%);    
     width: 100%;
     height: auto;
+    /* background-color: #000; */
+}
+
+#verMas {
+    background: linear-gradient(
+        to bottom,
+        #000 0%,
+        #000 50%,
+        var(--color-corporativo) 50%,
+        var(--color-corporativo) 100%
+      );
 }
 
 
@@ -462,8 +513,35 @@ footer .container4 h4 {
 }
 
 .container4 .container4-text {
-    padding: 60px;
+    padding: 60px 60px 0 60px;
     gap: 20px;
     display: flex;
     align-items: center
+}
+
+.container4-lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 45%;
+    padding: 0 0 80px 30px;
+}
+
+.container4-lists ul li a{
+    color: #fff;
+    font-size: 16px;
+    opacity: 70%;
+
+    transition: all .3s linear;
+}
+
+.container4-lists ul li a:hover{
+    opacity: 1;
+    text-shadow: 0 0 5px #fff;
+}
+
+.copy {
+    margin: 0;
+    padding: 0 60px 30px 60px;
+    font-size: 16px;
 }
