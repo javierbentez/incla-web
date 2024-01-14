@@ -37,7 +37,7 @@ main {
 
 /*COLORES*/
 :root {
---color-corporativo: #2e22af;
+--color-corporativo: rgb(49, 30, 185);
 --color-patreon: #FF6753;
 --color-discord: #7289da;
 --color-coffee: #FFD200;
@@ -451,7 +451,10 @@ h2 span {
 .main-container-download .download-btns a .download-button{
     
     /*FLEX PA ALINEAR TOO EL CONTEÍU ADIENTRO'L BOTÓN*/
-    background-color: var(--color-corporativo);
+    background-image: 
+    linear-gradient(to left, var(--color-corporativo), var(--color-corporativo),var(--color-corporativo), #ab00ff);
+    background-size: 300%;
+    background-position: right;
     border-radius: 10px;
     padding: 25px;
     gap: 8px;
@@ -460,16 +463,13 @@ h2 span {
     justify-content: center;
     
     transition: all .2s linear;
+    transition: all .2s linear;
 }
 
 .main-container-download .download-btns a .download-button:hover {
     gap: 16px;
     animation: btn-shadow-hover .8s forwards;
-    /*
-    background: linear-gradient(220deg, rgba(209,0,255,1) 0%, rgba(46,34,175,1) 100%);
-    border: 5px solid #000;
-    outline: 5px solid var(--color-corporativo);
-    */
+    background-position: left;
 }
 
 @keyframes btn-shadow-hover {
