@@ -27,6 +27,7 @@ SemiBold 600 Italic */
     list-style: none;
     text-decoration: none;
     font-family: 'Barlow', sans-serif;
+    color: white;
 }
 
 main {
