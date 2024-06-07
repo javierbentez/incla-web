@@ -39,10 +39,32 @@ function imprimirFondo() {
 
 }
 
+<<<<<<< HEAD
+setInterval(imprimirFondo, 5000);
+=======
 setInterval(imprimirFondo, 10000);
+>>>>>>> 6dd5a4f5702402a809ec56373219fb31e81709b1
 
 imprimirFondo();
 
 //---//
 
+<<<<<<< HEAD
+window.addEventListener('resize', function() {
+    var h2 = document.querySelector('h2');
+    if (window.innerWidth <= 900) {
+        h2.innerHTML = 'APÓYANOS: <br><span>¡Vuestro feedback es importante!</span>';
+    } else {
+        h2.innerHTML = 'APÓYANOS: <span>¡Vuestro feedback es importante!</span>';
+    }
+});
+
+//---//
+
+window.onload = function() {
+    var year = new Date().getFullYear();
+    document.querySelector('.copy').textContent = '©' + year + ' Incla Launcher. Todos los derechos reservados.';
+}
+=======
 console.log('Incla launcher')
+>>>>>>> 6dd5a4f5702402a809ec56373219fb31e81709b1

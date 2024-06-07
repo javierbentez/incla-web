@@ -77,7 +77,11 @@ body {
   
 header {
     background-color: #000;
+<<<<<<< HEAD
+    padding: 40px;
+=======
     padding: 1.8%;
+>>>>>>> 6dd5a4f5702402a809ec56373219fb31e81709b1
     position: fixed;
     width: 100%;
     top: 0;
@@ -122,6 +126,7 @@ nav ul li {
 .logo img {
     max-width: 10vh;
     cursor: pointer;
+    height: auto;
 }
   
 .enlaces {
@@ -145,7 +150,7 @@ h1 {
     font-weight: 800;
     letter-spacing: 5px;
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 4rem;
 }
 
 h2 {
@@ -214,7 +219,7 @@ h2 span {
     padding: 18px;
     border-radius: 14px;
     letter-spacing: 2px;
-    font-size: 2.5vh;
+    font-size: 1.5rem;
     font-family: 'Bai Jamjuree', sans-serif;
     color: #fff;
     font-weight: bold;
@@ -350,6 +355,14 @@ h2 span {
     align-items: center;
 }
 
+.container2-group-btns a > :first-child {
+    flex: 0 0 35%; /* Esto hace que el primer componente ocupe el 35% del espacio */
+}
+
+.container2-group-btns a > :last-child {
+    flex: 0 0 65%; /* Esto hace que el segundo componente ocupe el 65% del espacio */
+}
+
 .btn-text h3,
 .btn-text p {
     margin: 0;
@@ -357,21 +370,21 @@ h2 span {
 }
 
 .btn-text p {
-    font-size: 2vh;
+    font-size: 2vw;
 }
 
 .btn-text h3 {
-    font-size: 5vh;
+    font-size: 2.5vw;
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
 .container2-group-btns .btn-text {
     width: 100%;
-    
 }
 
 .container2-group-btns a img {
-    width: 80px;
+    width: 70px;
+    height: auto;
 }
 
 .container2-group-btns a {
@@ -543,6 +556,135 @@ footer .container4 h4 {
 
 .copy {
     margin: 0;
+<<<<<<< HEAD
+    padding: 30px 60px 30px 60px;
+    font-size: 16px;
+}
+
+/* --- */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width : 900px) {
+    #fondo {
+        background-image: none !important;
+    }
+
+    .enlaces {
+        flex-wrap: wrap;
+        justify-content: right;
+        padding-right: 40px;
+        font-size: 2.5vw;
+    }
+
+    h1 {
+        font-size: 12vw;
+    }
+    
+    h2 {
+        font-size: 8vw;
+    }
+    .container1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .container1 .btnsContainer1 {
+        flex-direction: column;
+    }
+    
+    .container1-text {
+        margin: 0;
+        width: auto;
+    }
+
+    .container1 .btnsContainer1 button, .container1 .btnsContainer1 a {
+        width: auto;
+        font-size: 4vw;
+    }
+
+    .container2-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container2-group-text {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container2-group-btns {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    /* .container2-group-btns a:first-child,
+    .container2-group-btns a:nth-child(2),
+    .container2-group-btns a:nth-child(3),
+    .container2-group-btns a:last-child {
+        margin-right: 0;
+        margin-left: 0;
+    } */
+
+    .btn-text p {
+        font-size: 4.5vw;
+    }
+    
+    .btn-text h3 {
+        font-size: 5.5vw;
+    }
+
+    .container2-group-btns a img {
+        width: 60px;
+        height: auto;
+    }
+
+    .main-container-download .download-btns {
+        width: auto;
+    }
+
+    .btn-text-img{
+        width: 30px;
+    }
+
+    .download-button-group {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .download-button-group a .btn-text .download-button {
+        width: auto;
+    }
+    
+    .download-button-group img.btn-text-img {
+        flex: 0 0 10%; /* Esto hace que la imagen ocupe el 10% del espacio */
+    }
+    
+    .download-button-group a {
+        flex: 0 0 90%; /* Esto hace que el enlace ocupe el 90% del espacio */
+    }
+
+    .container4 {
+        flex-direction: column;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .container4-text {
+        flex-direction: column-reverse;    
+    }
+
+    .container4-lists {
+        width: auto;
+        padding: 40px;
+        flex-direction: column;
+    }
+}
+=======
     padding: 0 60px 30px 60px;
     font-size: 16px;
 }
+>>>>>>> 6dd5a4f5702402a809ec56373219fb31e81709b1
