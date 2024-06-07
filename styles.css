@@ -437,9 +437,10 @@ h2 span {
 /*ICONOS DE LOS SISTEMAS OPERATIVOS*/
 .btn-text-img{
     width: 70px;
+    height: 70px;
     /* margin-left: 40px; */
     margin-right: 40px;
-    height: fit-content;
+    object-fit: cover;
 }
 
 .main-container-download .download-btns .download-button-group{
