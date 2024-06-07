@@ -252,6 +252,10 @@ h2 span {
 
 
 /* SEPARADOR 1 */
+.separador1 {
+    transform: translateY(2%);    
+}
+
 .separador1 img{
     transform: translateY(-45%);    
     width: 100%;
@@ -631,7 +635,7 @@ footer .container4 h4 {
 
     .container2-group-btns a img {
         width: 60px;
-        height: auto;
+        /* height: auto; */
     }
 
     .main-container-download .download-btns {
@@ -642,15 +646,15 @@ footer .container4 h4 {
         width: 30px;
     }
 
-    .download-button-group {
+    /* .download-button-group {
         display: flex;
         align-items: center;
         width: 100%;
-    }
+    } */
 
-    .download-button-group a .btn-text .download-button {
+    /* .download-button-group a .btn-text .download-button {
         width: auto;
-    }
+    } */
     
     .download-button-group img.btn-text-img {
         flex: 0 0 10%; /* Esto hace que la imagen ocupe el 10% del espacio */
