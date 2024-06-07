@@ -460,7 +460,7 @@ h2 span {
 .container3 .main-container-download .download-btns a .btn-text .download-button .lloreu{
     max-width: 30px;
     min-width: 10px;
-    height: fit-content;
+    height: auto;
 }
 
 .main-container-download .download-btns a .download-button{
@@ -532,6 +532,11 @@ footer .container4 h4 {
     gap: 20px;
     display: flex;
     align-items: center
+}
+
+.container4-text img {
+    width: 100px;
+    height: auto;
 }
 
 .container4-lists {
