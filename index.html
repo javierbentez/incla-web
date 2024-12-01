@@ -162,7 +162,7 @@
                 <div class="download-button-group">
 
                     <img class="btn-text-img" id="windows" src="./img/windows-logo.png" alt="Windows">
-                    <a id="download-link" href="#" target="_blank">
+                    <a id="download-link" href="/downloading" target="_blank">
                         <div class="btn-text">
                             <div class="download-button">
                                 <img class="lloreu" src="./img/lloreu_izq.png" alt="#">
@@ -254,25 +254,11 @@
 <!-- Contenido del pie de página -->
 <script src="./script.js"></script>
 <script>
-    async function updateDownloadLink() {
-        const apiUrl = 'https://api.github.com/repos/javierbentez/incla-web/releases/latest';
-        try {
-            const response = await fetch(apiUrl);
-            const data = await response.json();
-            const latestVersion = data.tag_name;
-            const downloadUrl = `https://github.com/javierbentez/incla-web/releases/download/${latestVersion}/Incla-Launcher-Setup-${latestVersion}.exe`;
-            document.getElementById('download-link').href = downloadUrl;
-        } catch (error) {
-            console.error('Error fetching the latest release:', error);
-        }
-    }
-
     function updateCurrentYear() {
             const year = new Date().getFullYear();
             document.getElementById('current-year').textContent = year;
         }
 
-        updateDownloadLink();
         updateCurrentYear();
 </script>
 </body>
